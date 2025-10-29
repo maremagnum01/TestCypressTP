@@ -1,5 +1,5 @@
-import user from "../fixtures/user.json"
-import books from "../fixtures/books.json"
+import user from "../../fixtures/user.json"
+import books from "../../fixtures/books.json"
 
 describe('Template spec', ()=>{
     it('API', () => {

@@ -1,7 +1,7 @@
-import urls from "../support/objects/urls"
-import filter from "../fixtures/filters.json"
-import addFilter from "../support/objects/addFilter"
-import rangePrice from "../support/objects/rangePrice"
+import urls from "../../support/objects/urls"
+import filter from "../../fixtures/filters.json"
+import addFilter from "../../support/objects/addFilter"
+import rangePrice from "../../support/objects/rangePrice"
 describe('template spec', () => {
   it('FE | Lista de deseos', () => {
     // Entrar a la web a testear

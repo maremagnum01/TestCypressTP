@@ -1,9 +1,9 @@
-import elements from "../support/objects/elements.js"
-import urls from "../support/objects/urls.js"
-import user from "../fixtures/user.json"
-import addBookToCart from "../support/objects/addBookToCart.js"
-import pageCheckOut from "../support/objects/pageCheckOut.js"
-import checkout from "../fixtures/chekOut.json"
+import elements from "../../support/objects/elements.js"
+import urls from "../../support/objects/urls.js"
+import user from "../../fixtures/user.json"
+import addBookToCart from "../../support/objects/addBookToCart.js"
+import pageCheckOut from "../../support/objects/pageCheckOut.js"
+import checkout from "../../fixtures/chekOut.json"
 
 describe('template spec', () => {
   it('Front', () => {
@@ -12,7 +12,7 @@ describe('template spec', () => {
     urls.typeUrlHome()
 
     elements.typeBtnLogin()
-    cy.execLogin(user.user, user.password) // ------> commands
+    cy.execLogin(user[0].user, user[0].password) // ------> commands
 
     //Paso 2
     addBookToCart.typeAddBookToCart()

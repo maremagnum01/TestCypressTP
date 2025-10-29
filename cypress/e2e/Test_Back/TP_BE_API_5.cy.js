@@ -1,11 +1,11 @@
-import user from "../fixtures/user.json"
-import books from "../fixtures/books.json"
+import user from "../../fixtures/user.json"
+import books from "../../fixtures/books.json"
 
 describe('Template spec', ()=>{
     it('API 5 | Error al editar carrito de compras', () => {
         //Se espera codigo 405, ya que el Request PUT no esta definido.
-        var url = `https://app.bookdbqa.online/api/shoppingcart/addToCart/2010/${user.id}/${books[2].bookId}`
-        var token = user.token
+        var url = `https://app.bookdbqa.online/api/shoppingcart/addToCart/2010/${user[0].id}/${books[2].bookId}`
+        var token = user[0].token
         var body = {
             "book": {
                 "bookId": 4,

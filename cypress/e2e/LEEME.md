@@ -1,34 +1,76 @@
-Este es mi TP final de la materia de Testing.
-Se realizo lo siguiente:
+# Trabajo Práctico Final – Testing
 
-Jira:
-    -En Jira se agrego casos de pruebas utilizando la herramienta QAlity.
-    -Se realizaron los casos de pruebas de ejemplo que dio la profesora. En jira son  SCRUM-28 y SCRUM-29
-    -La tarea era redactar en Jira 4 casos de pruebas. En este TP agregue 6 casos (4 de BackEnd y 2 de FrontEnd)
-    -Una vez redactados los casos de pruebas, se realizaron los dichos Tests.
-    -En cada caso de prueba en los comentarios, se agregaron las imagenes que prueban que se realizaron los Test.
+Este proyecto corresponde al Trabajo Práctico Final de la materia Testing.  
+El objetivo fue aplicar los conocimientos adquiridos en la cursada utilizando Jira y Cypress para la planificación, ejecución y automatización de casos de prueba.
 
-Cypress:
-    -En Cypress en la carpeta e2e se crearon 6 archivos .cy.js los cuales corresponden a los ejercicios de caso de pruebas de Jira.
-    -Tambien en la carpera e2e se agregaron los 2 ejercicios de la profesora resueltos.
-    -Estos archivos corresponden a 2 de front y 4 de back.
-    -Front:
-        ~Caso 1: se testeo la lista de deseos del sistema, se va realizando paso a paso. Iniciando sesion, agregando el libro de "Steve Jobs" a lista de deseos, dirigirse a esa lista, agregarlo al carrito y por ultimo elimiarlo de la lista de deseos.
-        ~Caso 2: este caso es mas sencillo, simplemente se visita la web a testear, se filta por categoria "Fantasy" y por ultimo se agrega el filtro de precios.
-    -Back:
-        ~Caso 3: realiza una peticion POST esperando un codigo 200
-        ~Caso 4: realiza una peticion GET esperando un codigo 200
-        ~Caso 5: realiza una peticion PUT esperando un codigo 405
-        ~Caso 6: realiza una peticion DELETE esperando un codigo 200
-    -En todos los ejercicios de Cypress, se Refactorizo el codigo de prueba, utilizando fixtures .json, objetos funcionales y se crearon Commands. Todo esto con el fin de mejorar el codigo y que sea reutilizable. 
+---
 
+## Contenido del trabajo
 
-PD: El caso 1 de pruebas de BE es el de la profesora, el caso 2 de prueba BE no existe, se realizo una idea y luego fue descartada y no se cambio la enumeracion de las pruebas.
+### Jira
 
-PD2: Las imagenes utilizadas como pruebas de que se realizaron los test, son 2, la primera es mostrando el resultado en la consola de cypress mediante una ventana de google chrome y la segunda es mostrando el codigo utilizado, esta ultima imagen es una screenshot del codigo ANTES de refactorizar. 
+En Jira se realizaron las siguientes tareas:
 
+- Se agregaron casos de prueba utilizando la herramienta QAlity.
+- Se ejecutaron los casos de prueba de ejemplo proporcionados por la profesora:
+  SCRUM-28 y SCRUM-29.
+- La consigna solicitaba redactar 4 casos de prueba, pero se agregaron 6 casos en total:
+  - 4 de BackEnd  
+  - 2 de FrontEnd
+- Una vez redactados los casos, se realizaron los tests correspondientes.
+- En cada caso de prueba se adjuntaron imágenes en los comentarios que demuestran la ejecución exitosa de los tests.
 
-Espero que el TP cumpla con lo pedido y que le guste! 
-Gracias por sus explicaciones, muy buena materia y la profe enseña perfecto!
+---
 
-Atte: Ezequiel Di lallo.
+### Cypress
+
+En Cypress, dentro de la carpeta e2e, se desarrollaron 6 archivos con extensión .cy.js, correspondientes a los casos de prueba creados en Jira.
+
+También se agregaron los 2 ejercicios de ejemplo de la profesora, totalmente resueltos.
+
+#### Estructura de pruebas
+
+FrontEnd:
+- Caso 1:  
+  Se testeó la lista de deseos del sistema paso a paso: iniciar sesión, agregar el libro "Steve Jobs" a la lista de deseos, ir a la lista, agregarlo al carrito y eliminarlo de la lista de deseos.  
+- Caso 2:  
+  Se visitó la web a testear, se filtró por categoría "Fantasy" y luego se aplicó el filtro de precios.
+
+BackEnd:
+- Caso 3: Petición POST, esperando código 200.  
+- Caso 4: Petición GET, esperando código 200.  
+- Caso 5: Petición PUT, esperando código 405.  
+- Caso 6: Petición DELETE, esperando código 200.
+
+#### Refactorización del código
+
+- Se refactorizó todo el código de prueba.
+- Se implementaron archivos fixtures .json, objetos funcionales y commands personalizados.
+- Esto permitió mejorar la legibilidad, reutilizar código y mantener una estructura limpia y escalable.
+
+---
+
+## Evidencias de ejecución
+
+Se utilizaron dos imágenes principales para evidenciar la ejecución de los tests:
+
+1. Resultado en consola de Cypress, mostrando la ejecución exitosa mediante Google Chrome.  
+2. Código fuente utilizado, screenshot tomado antes de la refactorización.
+
+---
+
+## Aclaraciones
+
+- El caso 1 de BackEnd corresponde al ejemplo de la profesora.  
+- El caso 2 de BackEnd fue una idea descartada, por lo que no se modificó la numeración final de las pruebas.
+
+---
+
+## Agradecimientos
+
+Espero que el trabajo práctico cumpla con lo solicitado y sea de su agrado.  
+Muchas gracias por las explicaciones durante la cursada.  
+Excelente materia y una profesora que enseña de manera clara y práctica.  
+
+Atentamente,  
+Ezequiel Di Lallo

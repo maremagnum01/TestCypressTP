@@ -1,9 +1,9 @@
-import user from "../fixtures/user.json"
-import pageLogin from "../support/objects/pageLogin"
-import books from "../fixtures/books.json"
-import addBookToWish from "../support/objects/addBookToWish.js"
-import elements from "../support/objects/elements.js"
-import urls from "../support/objects/urls.js"
+import user from "../../fixtures/user.json"
+import pageLogin from "../../support/objects/pageLogin.js"
+import books from "../../fixtures/books.json"
+import addBookToWish from "../../support/objects/addBookToWish.js"
+import elements from "../../support/objects/elements.js"
+import urls from "../../support/objects/urls.js"
 
 
 describe('template spec', () => {
@@ -13,7 +13,7 @@ describe('template spec', () => {
     urls.typeUrlHome()
     cy.get('span').contains('Login').click() // luego click en login 
     // pageLogin.ejecutarLogin(user.user, user.password)
-    cy.execLogin(user.user, user.password)
+    cy.execLogin(user[0].user, user[0].password)
 
 
     //Paso 2, agregar el libro de Steve Jobs a favoritos
