@@ -4,7 +4,7 @@ class addFilter{
             if ($btn.length > 0){
                 cy.wrap($btn).click()
             }else{
-                cy.log("No se encontro Boton de filtro o el filtro solicitado.")
+                throw new Error("No se encontro Boton de filtro o el filtro solicitado.")
             }
         })
     }

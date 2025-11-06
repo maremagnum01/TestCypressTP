@@ -5,7 +5,7 @@ class rangePrice{
             if (slider.length > 0){
                 cy.get('input.mdc-slider__input').invoke('val', valor).trigger('input').trigger('change')
             }else{
-                cy.log("No se encontro el slider en la pagina")
+                throw new Error("No se encontro el slider en la pagina")
             }
         })
     }

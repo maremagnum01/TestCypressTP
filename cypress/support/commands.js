@@ -40,3 +40,15 @@ Cypress.Commands.add('apiTest', (method, url, body = null, token = null, code) =
       expect(response.status).to.eq(code)
     })
   })
+
+Cypress.Commands.add('selectElements', (cant_elements)=>{
+  //Este cmd selecciona libros en este proyecto.
+    const cantidad = cant_elements
+      cy.get('div.p-1').then(($elements)=>{
+        const seleccionar = $elements.slice(0, cantidad)
+        cy.wrap(seleccionar).as('elementos')
+      })
+      cy.get('@elementos').each(($libros)=>{
+        cy.wrap($libros).should('exist')
+      })
+})

@@ -25,7 +25,7 @@ class pageLogin{
                 : cy.log('El elemento seleccionado no existe o no se encontro')
             })
         }else {
-            cy.log("No se ingreso contraseña de prueba.")
+            throw new Error("No se ingreso contraseña de prueba.")
         }
     }
 
@@ -34,7 +34,7 @@ class pageLogin{
             if($btn.length > 0){
                 cy.wrap($btn).click()
             }else{
-                cy.log("No se encontro el boton de login")
+                throw new Error("No se encontro el boton de login")
             }
         })
     }

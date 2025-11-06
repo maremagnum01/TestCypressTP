@@ -4,7 +4,7 @@ class elementsIcons{
             if ($btn.length > 0){
                 cy.wrap($btn).click()
             }else{
-                cy.log("No se encontro boton de favoritos o lista de deseos")
+                throw new Error("No se encontro boton de favoritos o lista de deseos")
             }
         })
     }
@@ -15,7 +15,7 @@ class elementsIcons{
                 cy.wrap($btn).click()
                 cy.contains('One Item added to cart').should('be.visible')
             }else{
-                cy.log("No se encontro boton de agregar al carrito")
+                throw new Error("No se encontro boton de agregar al carrito")
             }
         })
     }
@@ -26,7 +26,7 @@ class elementsIcons{
                 cy.wrap($btn).click()
                 cy.contains('Removed from Wishlist!!!').should('be.visible')
             }else{
-                cy.log("No se encontro boton de eliminar de desados")
+                throw new Error("No se encontro boton de eliminar de desados")
             }
         })
     }
@@ -36,7 +36,7 @@ class elementsIcons{
             if ($btn.length > 0) {
                 cy.wrap($btn).should('be.visible').click()
             } else {
-                cy.log("No se encontró el botón del carrito")
+                throw new Error("No se encontró el botón del carrito")
             }
         })
     }
@@ -46,7 +46,7 @@ class elementsIcons{
             if ($btn.length > 0 ){
                 cy.wrap($btn).should('be.visible').click()
             }else{
-                cy.log("No se encontro boton de CheckOut")
+                throw new Error("No se encontro boton de CheckOut")
             }
         })
     }
@@ -56,7 +56,7 @@ class elementsIcons{
             if ($btn.length > 0){
                 cy.wrap($btn).should("be.visible").click()
             }else{
-                cy.log("No se encontro boton de Place Order")
+                throw new Error("No se encontro boton de Place Order")
             }
         })
     }
@@ -70,7 +70,7 @@ class elementsIcons{
             if ($btn.length > 0 ){
                 cy.wrap($btn).click()
             }else{
-                cy.log("No se encontro boton de Login ")
+                throw new Error("No se encontro boton de Login ")
             }
         })
     }
